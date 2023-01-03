@@ -19,12 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <form onSubmit={handleSubmit} className="flex-col items-center justify-center w-[460px] mx-auto mt-9">
+      <form onSubmit={handleSubmit}>
       <label htmlFor="Name">
-          <div className="flex flex-col">
-            <p className="capitalize text-center font-medium">Name</p>
+          <div>
+            <p >Name</p>
             <input
-              className="w-full h-10 bg-[#F3F4F7] pl-5 font-medium rounded-lg"
               name="name"
               type="text"
               onChange={handleChange('name')}
